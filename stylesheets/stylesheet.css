@@ -32,7 +32,6 @@ Theme Styles
 *******************************************************************************/
 
 body {
-	box-sizing: border-box;
 	color: #373737;
 	background-color: #191919;
 	font-size: 15px;
@@ -41,6 +40,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 10px 0;
@@ -76,6 +76,7 @@ h6 {
 }
 p {
 	margin: 10px 0 15px 0;
+	color: #d5d5d5;
 }
 footer p {
 	color: #f2f2f2;
@@ -96,6 +97,7 @@ a {
 	-o-transition: text-shadow 0.5s ease;
 	-ms-transition: color 0.5s ease;
 	-ms-transition: text-shadow 0.5s ease;
+	
 }
 a:hover, a:focus {
 	text-decoration: underline;
@@ -112,9 +114,8 @@ strong {
 }
 img {
 	position: relative;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	max-width: 739px;
-	;
 	margin: 10px 0 10px 0;/*border: 1px solid #ebebeb;
 	box-shadow: 0 0 5px #ebebeb;
 	-webkit-box-shadow: 0 0 5px #ebebeb;
@@ -136,9 +137,9 @@ pre, code {
 	background-color: #fff;
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 	font-size: 14px;
-	border-radius: 2px;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
+	border-radius: 2px;
 }
 pre {
 	width: 100%;
@@ -306,7 +307,7 @@ nav ul:after {
 }
 nav ul {
 	list-style-type: none;
-	margin: 0;
+	margin: 0px 50px 0px 50px;
 	padding: 0;
 	overflow: hidden;
 	text-align: center;
@@ -324,13 +325,14 @@ nav li a {
 }
 nav li a:hover:not(.active) {
 	background: #3f3f3f;
+	text-decoration: none;
 }
 nav .active {
 	background: #3f3f3f;
 	color: #a3a3a3;
 }
 #header_divider {
-	height: 5px;
+	height: 2px;
 	background-color: red;
 }
 #downloads {
@@ -399,6 +401,10 @@ Home Section
 .home_title {
 	text-align: center;
 }
+.home_title a {
+	text-decoration: none;
+	color: #d5d5d5;
+}
 .home_textbox {
 	color: #d5d5d5;
 	font-family: "Open Sans" !important;
@@ -419,6 +425,18 @@ Home Section
 	list-style: disc outside !important;
 }
 /*******************************************************************************
+Games Section
+*******************************************************************************/
+#game_table {
+	position: relative;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+	margin: 0 !important;
+	border: 0 !important;
+	padding: 0 !important;
+}
+/*******************************************************************************
 Nowhere Section
 *******************************************************************************/
 
@@ -430,7 +448,9 @@ Nowhere Section
 	vertical-align: top;
 	margin: 0 !important;
 	border: 0 !important;
+	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 /*******************************************************************************
 Treasure Hunter Section
@@ -443,7 +463,16 @@ Treasure Hunter Section
 	vertical-align: top;
 	margin: 0 !important;
 	border: 0 !important;
+	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*******************************************************************************
+Responsive Experiment
+*******************************************************************************/
+.container {
+	max-width: 960px;
+	margin: auto;
 }
 
 /*******************************************************************************
@@ -510,8 +539,8 @@ body {
 	min-width: 320px;
 	max-width: 480px;
 }
-.outer{
-	width:auto;
+.outer {
+	width: auto;
 }
 #project_title {
 	font-size: 32px;
