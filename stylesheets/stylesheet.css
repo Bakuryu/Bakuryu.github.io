@@ -9,7 +9,6 @@ MeyerWeb Reset
 *******************************************************************************/
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
 	padding: 0;
 	border: 0;
 	font: inherit;
@@ -66,7 +65,8 @@ h3 {
 	font-weight: 400;
 }
 h4 {
-	font-size: 21px;
+	font-size: 1.5em;
+	font-weight: 400;
 }
 h5 {
 	font-size: 18px;
@@ -97,7 +97,6 @@ a {
 	-o-transition: text-shadow 0.5s ease;
 	-ms-transition: color 0.5s ease;
 	-ms-transition: text-shadow 0.5s ease;
-	
 }
 a:hover, a:focus {
 	text-decoration: underline;
@@ -116,7 +115,12 @@ img {
 	position: relative;
 	/*margin: 0 auto;*/
 	max-width: 739px;
-	margin: 10px 0 10px 0;/*border: 1px solid #ebebeb;
+	/* [disabled]margin-top: 10px;
+*/
+	margin-right: 0;
+	margin-left: 0;
+	/* [disabled]margin-bottom: 10px;
+*//*border: 1px solid #ebebeb;
 	box-shadow: 0 0 5px #ebebeb;
 	-webkit-box-shadow: 0 0 5px #ebebeb;
 	-moz-box-shadow: 0 0 5px #ebebeb;
@@ -233,7 +237,7 @@ Full-Width Styles
 }
 .inner {
 	position: relative;
-	max-width: 1047px;
+	max-width: 960px;
 	padding: 10px 0px;
 	margin: 0 auto;
 }
@@ -424,6 +428,16 @@ Home Section
 .home_textbox ul li {
 	list-style: disc outside !important;
 }
+.home_td {
+	width: 50%;
+	padding: 0px 15px;
+	vertical-align: top;
+	margin: 0 !important;
+	border: 0 !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 /*******************************************************************************
 Games Section
 *******************************************************************************/
@@ -436,36 +450,98 @@ Games Section
 	border: 0 !important;
 	padding: 0 !important;
 }
+.game_td {
+	border: none;
+}
+/*******************************************************************************
+Game Pages Section
+*******************************************************************************/
+
+.galleria-counter {
+	visibility: hidden;
+}
+.galleria-theme-classic {
+	background: #1a1a1a;
+	margin: auto;
+}
+.galleria-thumbnails {
+	margin: auto;
+}
+.gallery_wrapper {
+	margin: auto;
+}
+#gallery {
+	margin: auto;
+}
+.game_details{
+	margin-top:20px;
+}
+.game_specs {
+	width: 20%;
+	float: left;
+}
+.game_specs ul {
+	list-style-type: none;
+	color: #d5d5d5;
+}
+.game_specs li {
+	margin-top: 20px;
+}
+.game_overview {
+	width: 70%;
+	margin-left: 23%;
+}
+.game_contributions{
+	width: 70%;
+	margin-left: 23%;
+}
+.clearfix {
+	overflow: auto;
+}
 /*******************************************************************************
 Nowhere Section
 *******************************************************************************/
 
 /******Home*****/
 
-#nowhere_home_td {
-	width: 50%;
-	padding: 0px 15px;
-	vertical-align: top;
-	margin: 0 !important;
-	border: 0 !important;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
+
+/****Nowhere Page****/
+
+
+
 /*******************************************************************************
 Treasure Hunter Section
 *******************************************************************************/
 
 /******Home*****/
-#treasure_home_td {
-	width: 50%;
-	padding: 0px 15px;
-	vertical-align: top;
-	margin: 0 !important;
-	border: 0 !important;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+
+
+
+/*******************************************************************************
+Resume Section
+*******************************************************************************/
+.pdfresume{
+	text-align:center;
+}
+
+/*******************************************************************************
+Contact Section
+*******************************************************************************/
+.contactinfo{
+text-align:center;
+}
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+  display:inline-block;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons img{
+  width: 32px;
 }
 /*******************************************************************************
 Responsive Experiment

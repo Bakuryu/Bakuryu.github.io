@@ -15,17 +15,54 @@
   <header class="inner">
     <h1 id="project_title">Christopher Angelico </h1>
   </header>
-  <div id="header_divider"></div>
-  <nav>
+    <div id="header_divider"></div>
+<nav>
     <ul>
       <li><a href="../index.html">Home</a></li>
-      <li><a href="./Blog/Blog.html">Blog</a></li>
-      <li><a href="./Games/Games.html">Games</a></li>
-      <li><a href="./Resume/Resume.html">Resume</a></li>
-      <li><a href="./Contact/Contact.html">Contact</a></li>
+      <li><a href="./Blog.html">Blog</a></li>
+      <li><a href="./Games.html">Games</a></li>
+      <li><a href="./Resume.html">Resume</a></li>
+      <li><a href="./Contact.html">Contact</a></li>
     </ul>
   </nav>
 </div>
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner"> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script> 
+    <script src="../galleria/galleria-1.4.2.min.js"></script>
+    <div class="gallery_wrapper" align="center">
+      <div id="gallery"> <img src="../images/Games/Pixelnoid Cover Pic.png" alt=""> <img src="../images/Games/Pixelnoid/PixelnoidLVL1.png" alt=""> <img src="../images/Games/Pixelnoid/PixelnoidLVL2.png" alt=""> <img src="../images/Games/Pixelnoid/PixelnoidLVL3.png" alt="">  </div>
+    </div>
+    <script>
+            Galleria.loadTheme('../galleria/themes/classic/galleria.classic.min.js');
+			$("#gallery").galleria({
+                width: 820,
+                height: 500
+				});
+        </script>
+    <div id="pixelnoid_details" class="game_details clearfix">
+      <div id="pixelnoid_specs" class="game_specs">
+        <ul>
+          <li><strong>Platform:</strong> Windows</li>
+          <li><strong>Engine:</strong> Game Maker</li>
+          <li><strong>Language:</strong> GML</li>
+          <li><strong>Team Size:</strong> 1</li>
+          <li><strong>Role:</strong> Designer, Programmmer</li>
+        </ul>
+      </div>
+              <div id="pixelnoid_overview" class="game_overview">
+        <h4><strong>Overview</strong></h4>
+        <p>Pixelnoid is a arkanoid clone where each level is a different 8-bit NES character's head and each level's music, art, and power-ups are themed to that characters game. Strategize your use of power-ups and get the high-score!.</p>
+        </div>
+        <div id="pixelnoid_contributions" class="game_contributions">
+        <h4><strong>Contributions</strong></h4>
+        <p></p>
+        </div>
+    </div>
+  </section>
+</div>
+
 <!-- FOOTER  -->
 <div id="footer_wrap" class="outer">
   <footer class="inner">
