@@ -521,8 +521,24 @@ Treasure Hunter Section
 /*******************************************************************************
 Resume Section
 *******************************************************************************/
-.pdfresume{
+.pdf_wrapper{
 	text-align:center;
+}
+.pdfresume{
+	height:970px;
+	
+}
+#resumedownload{
+
+	
+}
+#resumedownload ul{
+	text-align:center;
+	list-style-type:none;
+}
+#resumedownload li{
+	display:inline;
+	margin: 0px 5px 0px 5px;
 }
 
 /*******************************************************************************
