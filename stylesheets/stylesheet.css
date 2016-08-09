@@ -408,6 +408,7 @@ Home Section
 .home_title a {
 	text-decoration: none;
 	color: #d5d5d5;
+	font-family: inherit;
 }
 .home_textbox {
 	color: #d5d5d5;
