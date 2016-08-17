@@ -41,6 +41,13 @@ body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+html body $(page.width.selector) {
+  min-width: 0;
+  max-width: 100%;
+  width: $(page.width);
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 10px 0;
 	color: #d5d5d5;
@@ -167,7 +174,7 @@ blockquote {
 	border-left: 3px solid #bbb;
 }
 ul, ol, dl {
-	margin-bottom: 15px
+	margin-bottom: 15px;
 }
 ul {
 	list-style-position: inside;
@@ -231,11 +238,11 @@ form {
 Full-Width Styles
 *******************************************************************************/
 
-.outer {
+.outer .main{
 	width: 960px;
 	margin: 0 auto;
 }
-.inner {
+.inner .main{
 	position: relative;
 	max-width: 960px;
 	padding: 10px 0px;
