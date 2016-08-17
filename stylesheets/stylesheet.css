@@ -233,11 +233,11 @@ form {
 Full-Width Styles
 *******************************************************************************/
 
-.outer #main{
+.outer {
 	width: 960px;
 	margin: 0 auto;
 }
-.inner #main{
+.inner {
 	position: relative;
 	max-width: 960px;
 	padding: 10px 0px;
