@@ -547,14 +547,10 @@ h3.post-title, .comments h4 {
 	padding-bottom: 5px;
 	color: #888888;
 	background-color: #303030;
-	border-bottom: 1px solid #d5d5d5;
 	line-height: 1.6;
 	font-size: 90%;
 }
 
-.post-footer-line{
-	display:inline;
-}
 .post-author-wrapper{
 	float:left;
 
@@ -566,9 +562,6 @@ h3.post-title, .comments h4 {
 div.post-share-buttons{
 	display:none;
 }
-
-
-
 
 #comments .comment-author {
   padding-top: 1.5em;
