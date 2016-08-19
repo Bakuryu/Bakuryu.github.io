@@ -222,8 +222,8 @@ th {
 	color: #fff;
 }
 td {
-	padding: 10px;
-	border: 1px solid #373737;
+	padding: 3px;
+	/*border: 1px solid #373737*/;
 }
 form {
 	background: #f2f2f2;
@@ -459,7 +459,9 @@ Blog Section
 h2.date-header {
  font:normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
  	text-align:left;
-	padding-top:15px;
+	padding-top: 0px;
+	margin: .5em 0 1.5em;
+	padding-bottom:0;
 }
 
 .date-header span {
@@ -467,7 +469,10 @@ h2.date-header {
 	color: #d5d5d5;
 	padding: 0;
 	letter-spacing: 0;
+}
 
+.date-header{
+	margin: .5em 0 1.5em; 
 }
 
 .main-inner {
@@ -484,7 +489,8 @@ h2.date-header {
 }
 
 .post {
-	margin: 0 0 30px 0;
+	margin: 0px;
+	padding-bottom:0px;
 	color: #d5d5d5;
 }
 
@@ -557,6 +563,10 @@ h3.post-title, .comments h4 {
 }
 .post-comment-link-wrapper{
 	text-align:right;
+}
+
+.post-icons{
+	float:left;
 }
 
 div.post-share-buttons{
