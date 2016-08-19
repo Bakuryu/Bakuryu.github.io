@@ -441,6 +441,174 @@ Home Section
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+/*******************************************************************************
+Blog Section
+*******************************************************************************/
+/* Blog
+----------------------------------------------- */
+.Blog {
+	margin: 0 50px 0 50px;
+}
+
+.blog-posts{
+	padding: 0 30px 0 30px
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+ font:normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+ 	text-align:left;
+	padding-top:15px;
+}
+
+.date-header span {
+	background-color: transparent;
+	color: #d5d5d5;
+	padding: 0;
+	letter-spacing: 0;
+
+}
+
+.main-inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-inner .column-center-inner {
+  padding: 0 15px;
+}
+
+.main-inner .column-center-inner .section {
+  margin: 0 15px;
+}
+
+.post {
+	margin: 0 0 30px 0;
+	color: #d5d5d5;
+}
+
+h3.post-title, .comments h4 {
+  font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+  margin: .75em 0 0;
+}
+
+.post-body {
+	/* [disabled]font-size: 110%; */
+	font-family: "Open Sans" !important;
+	line-height: 1.4;
+	position: relative;
+}
+
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+	padding: 0;
+	background: #111111;
+	border: 1px solid #111111;
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+	-webkit-box-shadow: 1px 1px 5px #111111;
+	box-shadow: 1px 1px 5px #111111;
+}
+
+.post-body img, .post-body .tr-caption-container {
+  padding: 1px;
+}
+
+.post-body .tr-caption-container {
+  color: #cccccc;
+}
+
+.post-body .tr-caption-container img {
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+
+.post-header {
+  margin: 0 0 1.5em;
+
+  line-height: 1.6;
+  font-size: 90%;
+}
+
+.post-footer {
+	margin-top: 20px;
+	margin-right: -2px;
+	margin-left: -2px;
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	color: #888888;
+	background-color: #303030;
+	border-bottom: 1px solid #d5d5d5;
+	line-height: 1.6;
+	font-size: 90%;
+}
+
+.post-footer-line{
+	display:inline;
+}
+.post-author-wrapper{
+	float:left;
+
+}
+.post-comment-link-wrapper{
+	text-align:right;
+}
+
+div.post-share-buttons{
+	display:none;
+}
+
+
+
+
+#comments .comment-author {
+  padding-top: 1.5em;
+
+  border-top: 1px solid #404040;
+  background-position: 0 1.5em;
+}
+
+#comments .comment-author:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.avatar-image-container {
+  margin: .2em 0 0;
+}
+
+#comments .avatar-image-container img {
+  border: 1px solid #111111;
+}
+
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+  border-left: 1px solid #404040;
+}
+
+.blog-pager {
+  background: transparent none no-repeat scroll top center;
+}
+
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+  background-color: #333333;
+  padding: 5px;
+}
+
+.footer-outer {
+  border-top: 0 dashed #bbbbbb;
+}
 /*******************************************************************************
 Games Section
 *******************************************************************************/
