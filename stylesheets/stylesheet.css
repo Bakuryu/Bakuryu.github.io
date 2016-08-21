@@ -562,7 +562,7 @@ h3.post-title {
 	font-size: 90%;
 }
 
-.post-author-wrapper{
+.post-author{
 	float:left;
 
 }
@@ -570,8 +570,8 @@ h3.post-title {
 	text-align:right;
 }
 
-.post-icons{
-	float:left;
+.item-control blog-admin pid-80175079{
+	display:inline;
 }
 
 div.post-share-buttons{
