@@ -542,7 +542,7 @@ h3.post-title {
 .post-footer-line.post-footer-line-1 {
 	display: inline;
 }
-.post-author.vcard {
+.post-author-wrapper {
 	float: left;
 }
 .post-comment-link-wrapper {
