@@ -41,8 +41,6 @@ body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
-
 h1, h2, h3, h4, h5, h6 {
 	margin: 10px 0;
 	color: #d5d5d5;
@@ -441,7 +439,6 @@ Home Section
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 /*******************************************************************************
 Blog Section
 *******************************************************************************/
@@ -450,70 +447,59 @@ Blog Section
 .Blog {
 	margin: 0 50px 0 50px;
 }
-
-.blog-posts{
+.blog-posts {
 	padding: 0 30px 0 30px
 }
-
-div.feed-link{
-	margin-left:25px;
-	color:#d5d5d5;
+div.feed-link {
+	margin-left: 25px;
+	color: #d5d5d5;
 }
 /* Posts
 ----------------------------------------------- */
 h2.date-header {
- font:normal bold 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
- 	text-align:left;
+	font: normal bold 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+	text-align: left;
 	padding-top: 0px;
 	margin: .5em 0 1.5em;
-	padding-bottom:0;
+	padding-bottom: 0;
 }
-
 .date-header span {
 	background-color: transparent;
 	color: #d5d5d5;
 	padding: 0;
 	letter-spacing: 0;
 }
-
-.date-header{
-	margin: .5em 0 1.5em; 
+.date-header {
+	margin: .5em 0 1.5em;
 }
-
 .main-inner {
-  padding-top: 30px;
-  padding-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
-
 .main-inner .column-center-inner {
-  padding: 0 15px;
+	padding: 0 15px;
 }
-
 .main-inner .column-center-inner .section {
-  margin: 0 15px;
+	margin: 0 15px;
 }
-
 .post {
 	margin: 0px;
-	padding-bottom:0px;
+	padding-bottom: 0px;
 	color: #d5d5d5;
 }
-
 h3.post-title {
-  font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
-  margin: .75em 0 0;
-  text-decoration:none;
+	font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+	margin: .75em 0 0;
+	text-decoration: none;
 }
-
 .post-body {
-	/* [disabled]font-size: 110%; */
+	/* [disabled]font-size: 110%;
+*/
 	font-family: "Open Sans" !important;
 	line-height: 1.4;
 	position: relative;
 }
-
-.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
-.BlogList .item-thumbnail img {
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img, .BlogList .item-thumbnail img {
 	padding: 0;
 	background: #111111;
 	border: 1px solid #111111;
@@ -521,33 +507,25 @@ h3.post-title {
 	-webkit-box-shadow: 1px 1px 5px #111111;
 	box-shadow: 1px 1px 5px #111111;
 }
-
 .post-body img, .post-body .tr-caption-container {
-  padding: 1px;
+	padding: 1px;
 }
-
 .post-body .tr-caption-container {
-  color: #cccccc;
+	color: #cccccc;
 }
-
 .post-body .tr-caption-container img {
-  padding: 0;
-
-  background: transparent;
-  border: none;
-
-  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
-  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
-  box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+	padding: 0;
+	background: transparent;
+	border: none;
+	-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+	-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+	box-shadow: 0 0 0 rgba(0, 0, 0, .1);
 }
-
 .post-header {
-  margin: 0 0 0em;
-
-  line-height: 1.6;
-  font-size: 90%;
+	margin: 0 0 0em;
+	line-height: 1.6;
+	font-size: 90%;
 }
-
 .post-footer {
 	margin-top: 20px;
 	margin-right: -2px;
@@ -561,73 +539,54 @@ h3.post-title {
 	line-height: 1.6;
 	font-size: 90%;
 }
-
-.post-author vcard{
-	float:left;
-
+.post-author .vcard {
+	float: left;
 }
-.post-comment-link-wrapper{
-	text-align:right;
-	float:right;
+.post-comment-link-wrapper {
+	float: right;
 }
-
-span.blog-admin span.pid-80175079{
-	display:inline;
+div.post-share-buttons {
+	display: none;
 }
-
-div.post-share-buttons{
-	display:none;
-}
-
 .comments h4 {
-	  font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
-  margin: .75em 0 0;
-  text-decoration:none;
-  font-size:14px;
+	font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+	margin: .75em 0 0;
+	text-decoration: none;
+	font-size: 14px;
 }
 #comments .comment-author {
-  padding-top: 1.5em;
-
-  border-top: 1px solid #404040;
-  background-position: 0 1.5em;
+	padding-top: 1.5em;
+	border-top: 1px solid #404040;
+	background-position: 0 1.5em;
 }
-
 #comments .comment-author:first-child {
-  padding-top: 0;
-  border-top: none;
+	padding-top: 0;
+	border-top: none;
 }
-
 .avatar-image-container {
-  margin: .2em 0 0;
+	margin: .2em 0 0;
 }
-
 #comments .avatar-image-container img {
-  border: 1px solid #111111;
+	border: 1px solid #111111;
 }
-
 /* Accents
 ---------------------------------------------- */
 .section-columns td.columns-cell {
-  border-left: 1px solid #404040;
+	border-left: 1px solid #404040;
 }
-
 .blog-pager {
-  background: transparent none no-repeat scroll top center;
-  padding: 5px;
+	background: transparent none no-repeat scroll top center;
+	padding: 5px;
 }
-
-.blog-pager-older-link, .home-link,
-.blog-pager-newer-link {
-  background-color: #333333;
-  padding: 20px;
-  color: #d5d5d5;
-  margin-left:25px;
-  margin-right:25px;
-  
+.blog-pager-older-link, .home-link, .blog-pager-newer-link {
+	background-color: #333333;
+	padding: 20px;
+	color: #d5d5d5;
+	margin-left: 25px;
+	margin-right: 25px;
 }
-
 .footer-outer {
-  border-top: 0 dashed #bbbbbb;
+	border-top: 0 dashed #bbbbbb;
 }
 /*******************************************************************************
 Games Section
@@ -664,8 +623,8 @@ Game Pages Section
 #gallery {
 	margin: auto;
 }
-.game_details{
-	margin-top:20px;
+.game_details {
+	margin-top: 20px;
 }
 .game_specs {
 	width: 20%;
@@ -682,7 +641,7 @@ Game Pages Section
 	width: 70%;
 	margin-left: 23%;
 }
-.game_contributions{
+.game_contributions {
 	width: 70%;
 	margin-left: 23%;
 }
@@ -711,44 +670,38 @@ Treasure Hunter Section
 /*******************************************************************************
 Resume Section
 *******************************************************************************/
-.pdf_wrapper{
-	text-align:center;
+.pdf_wrapper {
+	text-align: center;
 }
-.pdfresume{
-	height:970px;
-	
+.pdfresume {
+	height: 970px;
 }
-#resumedownload{
-
-	
+#resumedownload {
 }
-#resumedownload ul{
-	text-align:center;
-	list-style-type:none;
+#resumedownload ul {
+	text-align: center;
+	list-style-type: none;
 }
-#resumedownload li{
-	display:inline;
+#resumedownload li {
+	display: inline;
 	margin: 0px 5px 0px 5px;
 }
-
 /*******************************************************************************
 Contact Section
 *******************************************************************************/
-.contactinfo{
-text-align:center;
+.contactinfo {
+	text-align: center;
 }
-ul.share-buttons{
-  list-style: none;
-  padding: 0;
-  display:inline-block;
+ul.share-buttons {
+	list-style: none;
+	padding: 0;
+	display: inline-block;
 }
-
-ul.share-buttons li{
-  display: inline;
+ul.share-buttons li {
+	display: inline;
 }
-
-ul.share-buttons img{
-  width: 32px;
+ul.share-buttons img {
+	width: 32px;
 }
 /*******************************************************************************
 Responsive Experiment
