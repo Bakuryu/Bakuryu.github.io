@@ -539,11 +539,17 @@ h3.post-title {
 	line-height: 1.6;
 	font-size: 90%;
 }
+.post-footer-line post-footer-line-1 {
+	display: inline;
+}
 .post-author .vcard {
 	float: left;
 }
 .post-comment-link-wrapper {
-	float: right;
+	text-align: right
+}
+.post-icons-wrapper {
+	float: left;
 }
 div.post-share-buttons {
 	display: none;
