@@ -562,15 +562,16 @@ h3.post-title {
 	font-size: 90%;
 }
 
-.post-author{
+.post-author vcard{
 	float:left;
 
 }
 .post-comment-link-wrapper{
 	text-align:right;
+	float:right;
 }
 
-.item-control blog-admin pid-80175079{
+span.blog-admin span.pid-80175079{
 	display:inline;
 }
 
