@@ -537,7 +537,7 @@ h3.post-title {
 	padding-bottom: 5px;
 	background-color: #303030;
 	line-height: 1.6;
-	font-size: 90%;
+	font-size: 13px;
 }
 .post-footer-line.post-footer-line-1 {
 	display: inline;
@@ -546,13 +546,10 @@ h3.post-title {
 	float: left;
 }
 .post-comment-link-wrapper {
-	text-align: right;
+	float: right;
 }
 .post-icons-wrapper {
 	float: left;
-}
-div.post-share-buttons {
-	display: none;
 }
 .comments h4 {
 	font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
