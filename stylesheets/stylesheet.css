@@ -220,7 +220,7 @@ th {
 	color: #fff;
 }
 td {
-	padding: 3px;
+	/*padding: 3px;*/
 	/*border: 1px solid #373737*/;
 }
 form {
@@ -495,7 +495,9 @@ h3.post-title {
 .post-body {
 	/* [disabled]font-size: 110%;
 */
-	font-family: "Open Sans" !important;
+	/*[disabled]font-family: "Open Sans" !important;
+*/
+	font-family: "myriad pro","calibri","helvetica","arial",sans-serif;
 	line-height: 1.4;
 	position: relative;
 }
