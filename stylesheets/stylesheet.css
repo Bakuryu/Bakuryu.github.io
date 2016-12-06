@@ -698,7 +698,11 @@ Treasure Hunter Section
 
 
 /****Treasure Hunter Page****/
-
+#treasurehunt_dldbtn {
+	background-color: #FFEA2C;
+	color: #000000;
+	font-weight: bold;
+}
 
 /*******************************************************************************
 Pixelnoid Section
