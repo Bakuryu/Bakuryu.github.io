@@ -13,7 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
-	text-align: left;
+	text-align: center;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -704,6 +704,10 @@ Treasure Hunter Section
 	font-weight: bold;
 }
 
+/****Treasure Hunter Game****/
+#treasurehunt_game {
+	text-align:center;
+}
 /*******************************************************************************
 Pixelnoid Section
 *******************************************************************************/
@@ -719,6 +723,8 @@ Pixelnoid Section
 	color: #000000;
 	font-weight: bold;
 }
+
+/****Pixelnoid Game****/
 canvas {
 	image-rendering: optimizeSpeed;
 	-webkit-interpolation-mode: nearest-neighbor;
