@@ -35,17 +35,18 @@
   <section id="main_content" class="inner" style="padding-bottom:10px"> 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <div id="treasurehunter_game">
-    <applet code="org.lwjgl.util.applet.AppletLoader"
+      <applet code="org.lwjgl.util.applet.AppletLoader"
         archive="lwjgl_util_applet.jar" 
         codebase="." 
         width="800" height="600" style="">
-      <param name="al_title" value="Treasure Hunter">
-      <param name="al_main" value="edu.moravian.game.StateController">
-      <param name="al_jars" value="TreasureHunter.jar, lwjgl.jar,lwgl_applet.jar, jinput.jar, lwjgl_util.jar, slick.jar">
-      <param name="al_windows" value="natives_windows.jar">
-      <param name="al_linux" value="natives+linux.jar">
-      <param name="al_mac" value="natives_macosx.jar">
-    </applet>
+        <param name="al_title" value="Treasure Hunter">
+        <param name="al_main" value="edu.moravian.game.StateController">
+        <param name="al_jars" value="TreasureHunter.jar, lwjgl.jar,lwjgl_applet.jar, jinput.jar, lwjgl_util.jar, slick.jar, lwjgl-debug">
+        <param name="al_windows" value="windows_natives.jar">
+        <param name="al_linux" value="linux_natives.jar">
+        <param name="al_mac" value="macosx_natives.jar">
+        <param name="al_sol" value="solaris_natives.jar">
+      </applet>
     </div>
   </section>
   <div class="game_back"><a href="../Pixelnoid.html">
