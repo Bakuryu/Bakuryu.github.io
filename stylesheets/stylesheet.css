@@ -678,6 +678,8 @@ h2.date-header {
     margin: 0px;
     padding-bottom: 0px;
     color: #d5d5d5;
+    background-color:#404040;
+    padding:20px;
 }
 
 h3.post-title {
@@ -735,8 +737,8 @@ h3.post-title {
 
 .post-footer {
     margin-top: 20px;
-    margin-right: -2px;
-    margin-left: -2px;
+    margin-right: -20px;
+    margin-left: -20px;
     margin-bottom: 0;
     padding-top: 5px;
     padding-right: 10px;
@@ -745,6 +747,9 @@ h3.post-title {
     background-color: #303030;
     line-height: 1.6;
     font-size: 13px;
+    height:17px;
+    border-bottom:solid 50px #212121;
+
 }
 
 .post-footer-line.post-footer-line-1 {
