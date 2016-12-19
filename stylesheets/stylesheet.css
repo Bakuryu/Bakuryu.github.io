@@ -679,13 +679,15 @@ h2.date-header {
     padding-bottom: 0px;
     color: #d5d5d5;
     background-color:#404040;
-    padding:20px;
+    padding-top:10px;
 }
 
 h3.post-title {
     font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
     margin: .75em 0 0;
     text-decoration: none;
+    padding-left: 19px;
+    padding-bottom: 25px;
 }
 
 .post-body {
@@ -733,6 +735,11 @@ h3.post-title {
     margin: 0 0 0em;
     line-height: 1.6;
     font-size: 90%;
+}
+
+.date-outer{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .post-footer {
