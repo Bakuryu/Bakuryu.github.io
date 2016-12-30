@@ -678,8 +678,8 @@ h2.date-header {
     margin: 0px;
     padding-bottom: 0px;
     color: #d5d5d5;
-    background-color:#404040;
-    padding-top:10px;
+    background-color: #404040;
+    padding-top: 10px;
 }
 
 h3.post-title {
@@ -737,7 +737,7 @@ h3.post-title {
     font-size: 90%;
 }
 
-.date-outer{
+.date-outer {
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -754,9 +754,8 @@ h3.post-title {
     background-color: #303030;
     line-height: 1.6;
     font-size: 13px;
-    height:17px;
-    border-bottom:solid 50px #212121;
-
+    height: 17px;
+    border-bottom: solid 50px #212121;
 }
 
 .post-footer-line.post-footer-line-1 {
@@ -961,6 +960,98 @@ Blink Section
 /*******************************************************************************
 Combo Drop Section
 *******************************************************************************/
+
+#combodrop_plybtn {
+    background: #0097ff;
+    /* Old browsers
+    */
+    background: -moz-linear-gradient(45deg, #0097ff 0%, #00ffc5 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #0097ff 0%, #00ffc5 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #0097ff 0%, #00ffc5 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0097ff', endColorstr='#00ffc5', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    color: black;
+    font-weight: bold;
+}
+
+
+/******Play Game Jam ****/
+
+#canvas {
+    cursor: none;
+    height: 100%;
+    width: 56.25%
+}
+
+#body_combodrop {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    display: flex;
+}
+
+#combodrop_playinfo {
+    vertical-align: top;
+    margin: auto auto auto auto;
+    padding-left: 35px;
+    padding-right: 20px;
+    width: 33.3%;
+}
+
+#combodrop_playinfo h3 {
+    text-align: center;
+}
+
+#canvas_table {
+    width: 33.3%;
+    vertical-align: top;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #212121;
+    text-align: center;
+}
+
+#combodrop_optback {
+    margin: auto auto auto auto;
+    width: 33.3%;
+}
+
+#combodrop_fllscrnbtn {
+    background: #b000ff;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #b000ff 0%, #ff00b5 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #b000ff 0%, #ff00b5 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #b000ff 0%, #ff00b5 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b000ff', endColorstr='#ff00b5', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    color: black;
+    font-weight: bold;
+}
+
+#combodrop_musicbtn {
+    background: #b8ff00;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #b8ff00 0%, #ffea00 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #b8ff00 0%, #ffea00 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #b8ff00 0%, #ffea00 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b8ff00', endColorstr='#ffea00', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    color: black;
+    font-weight: bold;
+}
+
 
 /*******************************************************************************
 Nowhere Section

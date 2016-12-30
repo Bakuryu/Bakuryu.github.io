@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description" content="Bakuryu.GitHub.io : ">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../stylesheets/stylesheet.css">
+    <title>Combodrop</title>
+</head>
+<script>
+    const audio = document.createElement('audio');
+    audio.src = 'JustOutOfReach.mp3';
+    audio.id = 'audio';
+    var tempAudioVol = 1;
+    audio.loop = true;
+    audio.play();
+    audio.volume = 0;
+</script>
+
+<body id="body_combodrop">
+    <table style="margin-bottom:0;margin-left:0;margin-right:0;border:0;width:100%;">
+        <tr>
+            <td rowspan="2" id="combodrop_playinfo">
+                <div id="combodrop_playinst">
+                    <h3>How to Play</h3>
+                    <p>The objective of the game is to stack the shapes up to the dotted line. To move a shape into position simply move your mouse left or right. To drop a shape left click the mouse. Stack carefully and quickly because the floor is sinking!</p>
+                </div>
+                <div id="combodrop_pwrupinfo">
+                    <h3>Powerup</h3>
+                    <p>There is only one power up implemented in this version of the game. That power up is the <i style="font-style:italic;">Grow</i> powerup shown below.</p>
+                    <div style="text-align:center;"> <img style="width:100px;height:100px;text-align:center;" src="whiteexamplegrow.svg"></div>
+                </div>
+                <p>This power up will comes in the same three colors the shapes do is activated when it touches a shape of the same color it is. When activated it englarges the shape it made contact with. Beware though that if it makes contact with a shape that does not match its color there is a chance it will destroy it.</p>
+            </td>
+            <td rowspan="2" id="canvas_table">
+                <canvas id="canvas">
+                    <script type="text/javascript" src="bundle.js"></script>
+                </canvas>
+            </td>
+            <td id="combodrop_optback" style="text-align:center;width:33.3%;height:50%;">
+                <div>
+                    <div id="combodrop_options">
+                        <h3>Options</h3>
+                        <button style="width:35%;" id="combodrop_fllscrnbtn" class="game_button">Fullscreen</button>
+                        <script>
+                            function toggleFullscreen(elem) {
+                                elem = elem || document.documentElement;
+                                if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                                    if (elem.requestFullscreen) {
+                                        elem.requestFullscreen();
+                                    }
+                                    else if (elem.msRequestFullscreen) {
+                                        elem.msRequestFullscreen();
+                                    }
+                                    else if (elem.mozRequestFullScreen) {
+                                        elem.mozRequestFullScreen();
+                                    }
+                                    else if (elem.webkitRequestFullscreen) {
+                                        elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                                    }
+                                }
+                                else {
+                                    if (document.exitFullscreen) {
+                                        document.exitFullscreen();
+                                    }
+                                    else if (document.msExitFullscreen) {
+                                        document.msExitFullscreen();
+                                    }
+                                    else if (document.mozCancelFullScreen) {
+                                        document.mozCancelFullScreen();
+                                    }
+                                    else if (document.webkitExitFullscreen) {
+                                        document.webkitExitFullscreen();
+                                    }
+                                }
+                            }
+                            document.getElementById('combodrop_fllscrnbtn').addEventListener('click', function () {
+                                toggleFullscreen();
+                            });
+                        </script>
+                        <button style="width:35%;" id="combodrop_musicbtn" class="game_button">Music: Off</button>
+                        <script src="bundle.js"></script>
+                        <script>
+                            document.getElementById('combodrop_musicbtn').addEventListener('click', toggleMusic)
+
+                            function toggleMusic() {
+                                if (document.getElementById('combodrop_musicbtn').innerHTML == "Music: Off") {
+                                    document.getElementById('combodrop_musicbtn').innerHTML = "Music: On";
+                                }
+                                else {
+                                    document.getElementById('combodrop_musicbtn').innerHTML = "Music: Off";
+                                }
+                                if (tempAudioVol == 0) {
+                                    tempAudioVol = audio.volume;
+                                    audio.volume = 0;
+                                }
+                                else {
+                                    audio.volume = tempAudioVol;
+                                    tempAudioVol = 0;
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="combodrop_optback" style="vertical-align:bottom;width:33.3%;text-align:center;height:50%">
+                <div>
+                    <a href="../../../Games/Combodrop.html">
+                        <button style="width:40%;" id="combodrop_plybtn" class="game_button">Back</button></a>
+                    <footer style="font-size:14px;">
+                        <p> © 2016 Christopher Angelico, All rights reserved. Published with <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+                        <p>All content and trademarks property of their respective owners. </p>
+                    </footer>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
