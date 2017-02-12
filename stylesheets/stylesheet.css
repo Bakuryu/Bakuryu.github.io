@@ -962,6 +962,14 @@ Blink Section
 Combo Drop Section
 *******************************************************************************/
 
+/***** Game Page *****/
+
+#combodrop_gamebox {
+    outline: 1px solid black;
+}
+
+/***** Combodrop Page *****/
+
 #combodrop_plybtn {
     background: #0097ff;
     /* Old browsers
@@ -996,7 +1004,7 @@ Combo Drop Section
 
 
 
-/******Play Game Jam ****/
+/****** Play Game Jam ****/
 
 #canvas {
     cursor: none;
