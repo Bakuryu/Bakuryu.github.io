@@ -50,10 +50,34 @@
                 <a href="https://www.dropbox.com/s/cik7yad9ort4xn8/Combo%20Drop.zip?dl=1">
                     <button id="combodrop_dldbtn" class="game_button">Download</button>
                 </a>
-                <a href="../Games/Combodrop/Game%20Jam/Play.html">
-                    <button id="combodrop_plybtn" class="game_button">Play</button>
-                </a>
+                <div class="dropdown">
+                <button onclick="dropDwn()" id="combodrop_dropbtn" class="game_button">Play</button>
+                <div id="combodrop_drpdwn" class="dropdown-content">
+                    <a href="../Games/Combodrop/Game%20Jam/Play.html">Game Jam</a>
+                    <a href="../Games/Combodrop/Unity/Play.html">Unity</a>
+                </div>
+                </div>
             </div>
+            <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function dropDwn() {
+                document.getElementById("combodrop_drpdwn").classList.toggle("show");
+            }
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.game_button')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                 }
+            }
+            </script>
             <div id="combodrop_details" class="game_details clearfix">
                 <div id="combodrop_specs" class="game_specs">
                     <ul>
