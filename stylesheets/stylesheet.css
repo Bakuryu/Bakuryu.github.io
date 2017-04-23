@@ -1084,9 +1084,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062a4', end
 
 /****** Play Game Jam ****/
 
-#canvas {
+
+.combocanvas {
     cursor: none;
-    height: 100%;
     width: 56.25%
 }
 
@@ -1200,6 +1200,10 @@ canvas {
     margin-right: auto;
     display: block;
     height: 100%;
+   
+}
+
+.pixelcanvas{
     width: 640px;
 }
 
