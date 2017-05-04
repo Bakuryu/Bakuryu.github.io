@@ -573,6 +573,10 @@ Home Section
     text-align: center;
 }
 
+.home_pic_frame img {
+    border: 1px solid black;
+}
+
 .home_title {
     text-align: center;
 }
@@ -615,6 +619,11 @@ Home Section
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.home_summary {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 
@@ -824,6 +833,10 @@ h3.post-title {
     margin-right: 25px;
 }
 
+.home-link {
+
+}
+
 .footer-outer {
     border-top: 0 dashed #bbbbbb;
 }
@@ -851,6 +864,9 @@ Games Section
     text-align: left;
 }
 
+.game_box img {
+    border: 1px solid black;
+}
 
 /*******************************************************************************
 Game Pages Section
@@ -965,9 +981,7 @@ Combo Drop Section
 
 /***** Game Page *****/
 
-#combodrop_gamebox img {
-    outline: 1px solid black;
-}
+
 
 
 /***** Combodrop Page *****/
@@ -1028,7 +1042,7 @@ background: linear-gradient(45deg, #0062a4 1%,#00a47e 100%); /* W3C, IE10+, FF16
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062a4', endColorstr='#00a47e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.dropdown-content {
+.dropdown-content, .dropdown-content2 {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -1037,7 +1051,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062a4', end
     margin: 0px 2px;
 }
 
-.dropdown-content a {
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 18%;
+    overflow: auto;
+    margin: 0px 305px;
+}
+
+.dropdown-content a, .dropdown-content2 a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -1057,7 +1080,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0062a4', end
     font-weight: bold;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover, .dropdown-content2 a:hover{
     background: #0062a4;
     /* Old browsers */
     background: -moz-linear-gradient(45deg, #0062a4 1%, #00a47e 100%);
@@ -1354,7 +1377,7 @@ Small Device Styles
         background: #3f3f3f;
     }
     nav .active {
-        background: #3f3f3f;
+        background: #3f3fhome3f;
         color: #a3a3a3;
     }
     body {

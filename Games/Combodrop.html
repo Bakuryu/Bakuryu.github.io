@@ -35,27 +35,39 @@
                 });
             </script>
             <div id="combodrop_dldply" class="game_dldply">
-                <a href="https://www.dropbox.com/s/cik7yad9ort4xn8/Combo%20Drop.zip?dl=1">
-                    <button id="combodrop_dldbtn" class="game_button">Download</button>
-                </a>
+               <!-- <a href="https://www.dropbox.com/s/duis4tizar0e8q5/Combo%20Drop.zip?dl=1">-->
+                    <button onclick="dropDwn2()" id="combodrop_dldbtn" class="game_button">Download</button>
+                    <div id="combodrop_dlddrp" class="dropdown-content2"> <a href="https://www.dropbox.com/s/4aesm6dkv6xwk5k/Combo%20Drop%20Windows.zip?dl=1">Windows</a><a href="https://www.dropbox.com/s/3kufrnws3lbelon/Combo%20Drop%20Mac.zip?dl=1">Mac</a></div>
+             <!--   </a>-->
                 <div class="dropdown">
                     <button onclick="dropDwn()" id="combodrop_dropbtn" class="game_button">Play</button>
                     <div id="combodrop_drpdwn" class="dropdown-content"> <a href="../Games/Combodrop/Game%20Jam/Play.html">Game Jam</a> <a href="../Games/Combodrop/Unity/Play.html">Unity</a> </div>
                 </div>
             </div>
             <script>
-                /* When the user clicks on the button,
-                                            toggle between hiding and showing the dropdown content */
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
                 function dropDwn() {
                     document.getElementById("combodrop_drpdwn").classList.toggle("show");
+                }
+
+                function dropDwn2(){
+                    document.getElementById("combodrop_dlddrp").classList.toggle("show");
                 }
                 // Close the dropdown if the user clicks outside of it
                 window.onclick = function (event) {
                     if (!event.target.matches('.game_button')) {
                         var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var dropdowns2 = document.getElementsByClassName("dropdown-content2");
                         var i;
                         for (i = 0; i < dropdowns.length; i++) {
                             var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+
+                        for (i = 0; i < dropdowns2.length; i++) {
+                            var openDropdown = dropdowns2[i];
                             if (openDropdown.classList.contains('show')) {
                                 openDropdown.classList.remove('show');
                             }
@@ -66,8 +78,8 @@
             <div id="combodrop_details" class="game_details clearfix">
                 <div id="combodrop_specs" class="game_specs">
                     <ul>
-                        <li><strong>Status:</strong> Released/Development</li>
-                        <li><strong>Platform:</strong> HTML/Windows/Android</li>
+                        <li><strong>Status:</strong> Released (Game Jam)/Development (Unity)</li>
+                        <li><strong>Platform:</strong> HTML/Windows/Mac/Android</li>
                         <li><strong>Engine:</strong> Matter.js/Unity</li>
                         <li><strong>Language:</strong> Javascript/C#</li>
                         <li><strong>Team Size:</strong> 3</li>

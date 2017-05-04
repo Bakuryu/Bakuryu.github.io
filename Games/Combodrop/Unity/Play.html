@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en-us">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Combo Drop</title>
-    <style>
-        /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
+		<style>
+	    /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
 
         * {
             margin: 0;
@@ -18,26 +17,24 @@
             height: 100%;
             position: absolute;
         }
-
-    </style>
-</head>
-
-<body>
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="1280px"></canvas>
+		</style>
+  </head>
+  <body>
+  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="1280px"></canvas>
     <script type='text/javascript'>
-        var Module = {
-            TOTAL_MEMORY: 268435456,
-            errorhandler: null, // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-            compatibilitycheck: null,
-            dataUrl: "Release/Combo Drop Web 02-16-17.data",
-            codeUrl: "Release/Combo Drop Web 02-16-17.js",
-            memUrl: "Release/Combo Drop Web 02-16-17.mem",
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "Release/Default WebGL.data",
+    codeUrl: "Release/Default WebGL.js",
+    asmUrl: "Release/Default WebGL.asm.js",
+    memUrl: "Release/Default WebGL.mem",
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
 
-        };
-
-    </script>
-    <script src="Release/UnityLoader.js"></script>
-
-</body>
-
+  </body>
 </html>
